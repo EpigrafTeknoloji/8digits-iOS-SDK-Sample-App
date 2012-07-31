@@ -1,0 +1,8 @@
+
+*.xcworkspacedata
+
+*.xcscheme
+
+EightDigitsTest.xcodeproj/xcuserdata/sth.xcuserdatad/xcschemes/xcschememanagement.plist
+
+EightDigitsTest.xcodeproj/project.xcworkspace/xcuserdata/sth.xcuserdatad/UserInterfaceState.xcuserstate
