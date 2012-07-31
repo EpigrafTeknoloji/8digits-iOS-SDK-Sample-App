@@ -1,5 +1,5 @@
 //
-//  EDTDetailViewController.h
+//  EDTVisitorViewController.h
 //  EightDigitsTest
 //
 //  Created by Seyithan Teymur on 30/07/12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EDTDetailViewController : UIViewController <UISplitViewControllerDelegate>
-
-@property (strong, nonatomic) id detailItem;
+@interface EDTVisitorViewController : UIViewController
 
 @end

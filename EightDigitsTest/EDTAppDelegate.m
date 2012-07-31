@@ -12,14 +12,23 @@
 
 #import "EDTDetailViewController.h"
 
+#import "EightDigits.h"
+
 @implementation EDTAppDelegate
 
 @synthesize window = _window;
 @synthesize navigationController = _navigationController;
 @synthesize splitViewController = _splitViewController;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+	
+	/**
+		8digits visit start
+	 */
+#warning Fill in your own username and password here
+#warning Don't forget to fill in your tracking code and url prefix as values for EDTrackingCode and EDURLPrefix keys inside EightDigits.plist
+	[[EDVisit currentVisit] startWithUsername:@"your-username" password:@"your-password"];
+	
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
