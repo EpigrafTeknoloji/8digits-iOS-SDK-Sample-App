@@ -29,6 +29,13 @@
 #warning Don't forget to fill in your tracking code and url prefix as values for EDTrackingCode and EDURLPrefix keys inside EightDigits.plist
 	[[EDVisit currentVisit] startWithUsername:@"your-username" password:@"your-password"];
 	
+	/**
+		We want 8digits to log the activity so we call the startActivity method of our currentVisit. 
+		You might want to delete this line or disable logging anywhere in your application by calling stopLogging when you release the app.
+	 */
+	[[EDVisit currentVisit] startLogging];
+
+	
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {

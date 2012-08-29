@@ -23,6 +23,8 @@
 
 @interface EDVisit ()
 
+@property (nonatomic, readwrite)					BOOL				 logging;
+
 @property (nonatomic, strong, readwrite)			NSString			*authToken;
 @property (nonatomic, strong, readwrite)			NSString			*visitorCode;
 @property (nonatomic, strong, readwrite)			NSString			*sessionCode;
@@ -58,6 +60,8 @@
 static EDVisit	*_currentVisit = nil;
 
 @implementation EDVisit
+
+@synthesize logging					= _logging;
 
 @synthesize urlPrefix				= _urlPrefix;
 @synthesize trackingCode			= _trackingCode;
@@ -211,8 +215,6 @@ static EDVisit	*_currentVisit = nil;
 
 - (void)addRequest:(ASIHTTPRequest *)request {
 	
-//	NSLog(@"Adding request: %@", request.url.absoluteString);
-	
 	if (self.authorised && !self.suspended) {
 		[self.networkQueue addOperation:request];
 		[self.networkQueue go];
@@ -327,7 +329,10 @@ static EDVisit	*_currentVisit = nil;
 	
 	self.endDate = [NSDate date];
 	[self requestEnd];
-	NSLog(@"Ending visit for %@", self.visitorCode);
+	
+	if (self.logging) {
+		NSLog(@"8digits: Ending visit for %@", self.visitorCode);
+	}
 	
 }
 
@@ -337,7 +342,9 @@ static EDVisit	*_currentVisit = nil;
 		return;
 	}
 
-	NSLog(@"Starting visit for %@", self.visitorCode); 
+	if (self.logging) {
+		NSLog(@"8digits: Starting visit for %@", self.visitorCode);
+	}
 	
 	NSString *URLString = [NSString stringWithFormat:@"%@/auth", self.urlPrefix]; 
 	self.authRequest = [[ASIFormDataRequest alloc] initWithURL:[NSURL URLWithString:URLString]];
@@ -446,7 +453,10 @@ static EDVisit	*_currentVisit = nil;
 	[currentVisitor setVisit:self];
 	[EDVisitor setCurrentVisitor:currentVisitor];
 	
-	NSLog(@"%@ authorised", self.visitorCode);
+	if (self.logging) {
+		NSLog(@"8digits: Visitor (%@) authorised", self.visitorCode);
+	}
+	
 	[[NSNotificationCenter defaultCenter] postNotificationName:EDVisitDidChangeAuthorisationStatusNotification object:self];
 }
 
@@ -472,6 +482,18 @@ static EDVisit	*_currentVisit = nil;
 		[self.validationDelegate visit:self didGetValidatedSuccessfully:YES];
 	}
 	
+}
+
+#pragma mark - Logging
+
+- (void)startLogging {
+	NSLog(@"8digits: Started logging");
+	self.logging = YES;
+}
+
+- (void)stopLogging {
+	NSLog(@"8digits: Stopped logging");
+	self.logging = NO;
 }
 
 #pragma mark - Encoding
