@@ -26,6 +26,11 @@
 		6CBEB04F15C6A3600009FEFA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBEB04E15C6A3600009FEFA /* CFNetwork.framework */; };
 		6CBEB05115C6A3630009FEFA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBEB05015C6A3630009FEFA /* Security.framework */; };
 		6CBEB05315C6A3790009FEFA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBEB05215C6A3790009FEFA /* SystemConfiguration.framework */; };
+		6CDFB892160B4B0D00750261 /* icon-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CDFB88D160B4B0D00750261 /* icon-ipad.png */; };
+		6CDFB893160B4B0D00750261 /* icon-ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CDFB88E160B4B0D00750261 /* icon-ipad@2x.png */; };
+		6CDFB894160B4B0D00750261 /* icon-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CDFB88F160B4B0D00750261 /* icon-large.png */; };
+		6CDFB895160B4B0D00750261 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CDFB890160B4B0D00750261 /* icon.png */; };
+		6CDFB896160B4B0D00750261 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CDFB891160B4B0D00750261 /* icon@2x.png */; };
 		6CEF72CD16087EB5000B03E7 /* EDEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF72A516087EB5000B03E7 /* EDEvent.m */; };
 		6CEF72CE16087EB5000B03E7 /* EDHit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF72A716087EB5000B03E7 /* EDHit.m */; };
 		6CEF72CF16087EB5000B03E7 /* EDMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF72AA16087EB5000B03E7 /* EDMonitor.m */; };
@@ -71,6 +76,11 @@
 		6CBEB04E15C6A3600009FEFA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		6CBEB05015C6A3630009FEFA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6CBEB05215C6A3790009FEFA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6CDFB88D160B4B0D00750261 /* icon-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ipad.png"; sourceTree = "<group>"; };
+		6CDFB88E160B4B0D00750261 /* icon-ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-ipad@2x.png"; sourceTree = "<group>"; };
+		6CDFB88F160B4B0D00750261 /* icon-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-large.png"; sourceTree = "<group>"; };
+		6CDFB890160B4B0D00750261 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		6CDFB891160B4B0D00750261 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		6CEF72A316087EB5000B03E7 /* ED_ARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ED_ARC.h; sourceTree = "<group>"; };
 		6CEF72A416087EB5000B03E7 /* EDEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDEvent.h; sourceTree = "<group>"; };
 		6CEF72A516087EB5000B03E7 /* EDEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDEvent.m; sourceTree = "<group>"; };
@@ -167,6 +177,7 @@
 		6CBEAFED15C6A3250009FEFA /* EightDigitsTest */ = {
 			isa = PBXGroup;
 			children = (
+				6CDFB898160B4B1100750261 /* icon */,
 				6CEF72A216087EB5000B03E7 /* 8digits-iOS-API */,
 				6CBEAFF615C6A3250009FEFA /* EDTAppDelegate.h */,
 				6CBEAFF715C6A3250009FEFA /* EDTAppDelegate.m */,
@@ -195,6 +206,18 @@
 				6CBEAFF515C6A3250009FEFA /* EightDigitsTest-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CDFB898160B4B1100750261 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				6CDFB88D160B4B0D00750261 /* icon-ipad.png */,
+				6CDFB88E160B4B0D00750261 /* icon-ipad@2x.png */,
+				6CDFB88F160B4B0D00750261 /* icon-large.png */,
+				6CDFB890160B4B0D00750261 /* icon.png */,
+				6CDFB891160B4B0D00750261 /* icon@2x.png */,
+			);
+			name = icon;
 			sourceTree = "<group>";
 		};
 		6CEF72A216087EB5000B03E7 /* 8digits-iOS-API */ = {
@@ -319,6 +342,11 @@
 				6CBEB00A15C6A3260009FEFA /* EDTDetailViewController_iPad.xib in Resources */,
 				6C781C5515C6D18300518746 /* EDTVisitorViewController.xib in Resources */,
 				6CEF72D216087EB5000B03E7 /* EightDigits.plist in Resources */,
+				6CDFB892160B4B0D00750261 /* icon-ipad.png in Resources */,
+				6CDFB893160B4B0D00750261 /* icon-ipad@2x.png in Resources */,
+				6CDFB894160B4B0D00750261 /* icon-large.png in Resources */,
+				6CDFB895160B4B0D00750261 /* icon.png in Resources */,
+				6CDFB896160B4B0D00750261 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = armv7;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -428,7 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = armv7;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
