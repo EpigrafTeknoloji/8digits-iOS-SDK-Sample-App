@@ -36,8 +36,6 @@
 @property (nonatomic, strong)						ASIFormDataRequest	*startRequest;
 @property (nonatomic, strong)						ASIFormDataRequest	*endRequest;
 
-@property (nonatomic, strong)						NSString			*leak;
-
 - (void)requestStart;
 - (void)requestEnd;
 
@@ -92,7 +90,6 @@
 	
 	if (self) {
 		[self setTitle:controller.title path:NSStringFromClass(controller.class)];
-		self.leak = @"Leaky";
 	}
 	
 	return self;
@@ -331,7 +328,7 @@
 	EDHit *hit = objc_getAssociatedObject(self, @"ED_hit");
 	
 	if (hit == nil || hit.endDate) {
-		ED_ARC_RELEASE(hit);
+
 		hit = ED_ARC_AUTORELEASE([[EDHit alloc] initWithController:self]);
 		
 		EDClassInfo *info = [[EDMonitor defaultMonitor] classInfoForClass:[self class]];
