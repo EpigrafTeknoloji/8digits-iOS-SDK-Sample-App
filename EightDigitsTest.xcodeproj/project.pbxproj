@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		6C781C5415C6D18300518746 /* EDTVisitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C781C5215C6D18300518746 /* EDTVisitorViewController.m */; };
 		6C781C5515C6D18300518746 /* EDTVisitorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C781C5315C6D18300518746 /* EDTVisitorViewController.xib */; };
+		6CA2FDB316AFEE5500C25610 /* EDTVisitorAddAttributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2FDB216AFEE5500C25610 /* EDTVisitorAddAttributeViewController.m */; };
+		6CA651CD16B0096700971256 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA651CC16B0096700971256 /* Default.png */; };
+		6CA651D016B0096B00971256 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA651CF16B0096B00971256 /* Default@2x.png */; };
+		6CA651D216B0096E00971256 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CA651D116B0096E00971256 /* Default-568h@2x.png */; };
 		6CBEAFE815C6A3250009FEFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBEAFE715C6A3250009FEFA /* UIKit.framework */; };
 		6CBEAFEA15C6A3250009FEFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBEAFE915C6A3250009FEFA /* Foundation.framework */; };
 		6CBEAFEC15C6A3250009FEFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBEAFEB15C6A3250009FEFA /* CoreGraphics.framework */; };
@@ -53,6 +57,11 @@
 		6C781C5115C6D18300518746 /* EDTVisitorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDTVisitorViewController.h; sourceTree = "<group>"; };
 		6C781C5215C6D18300518746 /* EDTVisitorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDTVisitorViewController.m; sourceTree = "<group>"; };
 		6C781C5315C6D18300518746 /* EDTVisitorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDTVisitorViewController.xib; sourceTree = "<group>"; };
+		6CA2FDB116AFEE5500C25610 /* EDTVisitorAddAttributeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDTVisitorAddAttributeViewController.h; sourceTree = "<group>"; };
+		6CA2FDB216AFEE5500C25610 /* EDTVisitorAddAttributeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDTVisitorAddAttributeViewController.m; sourceTree = "<group>"; };
+		6CA651CC16B0096700971256 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6CA651CF16B0096B00971256 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6CA651D116B0096E00971256 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6CBEAFE315C6A3250009FEFA /* EightDigitsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EightDigitsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CBEAFE715C6A3250009FEFA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6CBEAFE915C6A3250009FEFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -145,6 +154,9 @@
 		6CBEAFD815C6A3250009FEFA = {
 			isa = PBXGroup;
 			children = (
+				6CA651D116B0096E00971256 /* Default-568h@2x.png */,
+				6CA651CF16B0096B00971256 /* Default@2x.png */,
+				6CA651CC16B0096700971256 /* Default.png */,
 				6CBEAFED15C6A3250009FEFA /* EightDigitsTest */,
 				6CBEAFE615C6A3250009FEFA /* Frameworks */,
 				6CBEAFE415C6A3250009FEFA /* Products */,
@@ -192,6 +204,8 @@
 				6C781C5115C6D18300518746 /* EDTVisitorViewController.h */,
 				6C781C5215C6D18300518746 /* EDTVisitorViewController.m */,
 				6C781C5315C6D18300518746 /* EDTVisitorViewController.xib */,
+				6CA2FDB116AFEE5500C25610 /* EDTVisitorAddAttributeViewController.h */,
+				6CA2FDB216AFEE5500C25610 /* EDTVisitorAddAttributeViewController.m */,
 				6CBEAFEE15C6A3250009FEFA /* Supporting Files */,
 			);
 			path = EightDigitsTest;
@@ -347,6 +361,9 @@
 				6CDFB894160B4B0D00750261 /* icon-large.png in Resources */,
 				6CDFB895160B4B0D00750261 /* icon.png in Resources */,
 				6CDFB896160B4B0D00750261 /* icon@2x.png in Resources */,
+				6CA651CD16B0096700971256 /* Default.png in Resources */,
+				6CA651D016B0096B00971256 /* Default@2x.png in Resources */,
+				6CA651D216B0096E00971256 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +394,7 @@
 				6CEF72DA16087EB5000B03E7 /* ASINetworkQueue.m in Sources */,
 				6CEF72DB16087EB5000B03E7 /* JSONKit.m in Sources */,
 				6CEF72DC16087EB5000B03E7 /* Reachability.m in Sources */,
+				6CA2FDB316AFEE5500C25610 /* EDTVisitorAddAttributeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
