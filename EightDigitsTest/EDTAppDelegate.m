@@ -27,7 +27,7 @@
 	 */
 #warning Fill in your own username and password here
 #warning Don't forget to fill in your tracking code and url prefix as values for EDTrackingCode and EDURLPrefix keys inside EightDigits.plist
-	[[EDVisit currentVisit] startWithUsername:@"your-username" password:@"your-password"];
+	[[EDVisit currentVisit] startWithApiKey:@"2c24f939d2ff019c1e75ee11b9d44e5qwe" trackingCode:@"wqwe2hpmb" urlPrefix:@"http://api.8digits.com/api/"];
 	
 	/**
 		We want 8digits to log the activity so we call the startLogging method of our currentVisit. 
