@@ -28,10 +28,10 @@
 #warning Fill in your own username and password here
 #warning Don't forget to fill in your tracking code and url prefix as values for EDTrackingCode and EDURLPrefix keys inside EightDigits.plist
 	[[EDVisit currentVisit] setLocationWithLongitude:@"41.39" andLatitude:@"29.46"];
-    [[EDVisit currentVisit] startWithApiKey:@"458c937d124955befba8017e9030e90c" trackingCode:@"rktupopy" urlPrefix:@"http://demo2.8digits.com/api/"];
+    [[EDVisit currentVisit] startWithApiKey:@"458c937d124955befba8011e9030e90c" trackingCode:@"rktqpopy" urlPrefix:@"http://demo2.8digits.com/api/"];
     
     NSArray *keys = [[NSArray alloc] initWithObjects:@"GSM", nil];
-    NSArray *objs = [[NSArray alloc] initWithObjects:@"AVEA", nil];
+    NSArray *objs = [[NSArray alloc] initWithObjects:@"Turkcell", nil];
     NSDictionary *dictForVisitor = [[NSDictionary alloc] initWithObjects:objs forKeys:keys];
     
 	[[EDVisitor currentVisitor] setVisitorAttributesFromDictionary:dictForVisitor withCompletionHandler: ^(NSString *error) {}];
