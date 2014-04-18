@@ -64,36 +64,9 @@
 	/**
 		Get the score
 	 */
-	self.visitorScore = [[EDVisitor currentVisitor] score];
-		
-	if (self.visitorScore == EDVisitorScoreNotLoaded) {
-		
-		/**
-			Score has not been loaded yet.
-			Load asynchronously
-		 */
-		[[EDVisitor currentVisitor] loadScoreWithCompletionHandler:^(NSInteger score, NSString *error) {
-
-			self.visitorScore = score;
-			self.loadingView.hidden = YES;
-			self.scoreLabel.hidden = NO;
-			self.scoreLabel.text = [NSString stringWithFormat:@"%i", self.visitorScore];
-			
-		}];
-		
-	}
-	
-	else {
-		
-		/**
-			Score has been loaded.
-			Update the interface.
-		 */
-		self.loadingView.hidden = YES;
-		self.scoreLabel.hidden = NO;
-		self.scoreLabel.text = [NSString stringWithFormat:@"%i", self.visitorScore];
-		
-	}
+	    
+    self.scoreLabel.hidden = YES;
+    self.loadingView.hidden = YES;
     
     /**
         Get visitor's age

@@ -132,7 +132,7 @@
 #pragma mark - Table view methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	return self.detailItem ? 2 : 0;
+	return self.detailItem ? 1 : 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -223,38 +223,7 @@
 	/**
 		Score increase/decrease
 	 */
-	else {
-
-		if (indexPath.row == 0) {
-			[[EDVisitor currentVisitor] increaseScoreBy:2 withCompletionHandler:^(NSInteger newScore, NSString *error) {
-				
-				if (error) {
-					NSLog(@"Score increase error: %@", error);
-				}
-				
-				else {
-					NSLog(@"Score increased. New score: %i", newScore);
-				}
-				
-			}];
-		}
 		
-		else {
-			[[EDVisitor currentVisitor] decreaseScoreBy:1 withCompletionHandler:^(NSInteger newScore, NSString *error) {
-				
-				if (error) {
-					NSLog(@"Score decrease error: %@", error);
-				}
-				
-				else {
-					NSLog(@"Score decreased. New score: %i", newScore);
-				}
-				
-			}];
-		}
-		
-	}
-	
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	
 }

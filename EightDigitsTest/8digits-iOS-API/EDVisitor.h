@@ -63,24 +63,6 @@ typedef enum _EDVisitorGender {
 @property (nonatomic, assign, readonly)	NSInteger	 score;
 
 /**
-	Asynchronously loads the visitor score as an array of badge identifiers. Calls completionHandler when complete. Error will be nil on success.
- */
-- (void)loadScoreWithCompletionHandler:(void(^)(NSInteger score, NSString *error))completionHandler;
-
-/**
-	Asynchronously increases visitor score by differential
-	Calls completionHandler when complete. Error will be nil on success.
- */
-- (void)increaseScoreBy:(NSInteger)differential withCompletionHandler:(void(^)(NSInteger newScore, NSString *error))completionHandler;
-
-/**
-	Asynchronously decreases visitor score by differential
-	Calls completionHandler when complete. Error will be nil on success.
- */
-- (void)decreaseScoreBy:(NSInteger)differential withCompletionHandler:(void(^)(NSInteger newScore, NSString *error))completionHandler;
-
-
-/**
 	Full name of the visitor. 
     Sets fullName as visitor attribute value for key: fullName.
     Will be sent to 8digits servers as soon as set. Also kept locally once successfully sent to servers. You can check and overwrite only if nil.
