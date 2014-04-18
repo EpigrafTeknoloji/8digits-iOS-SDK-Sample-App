@@ -25,10 +25,10 @@
 	/**
 		8digits visit start
 	 */
-#warning Fill in your own username and password here
-#warning Don't forget to fill in your tracking code and url prefix as values for EDTrackingCode and EDURLPrefix keys inside EightDigits.plist
+//warning Fill in your own username and password here
+//warning Don't forget to fill in your tracking code and url prefix as values for EDTrackingCode and EDURLPrefix keys inside EightDigits.plist
 	[[EDVisit currentVisit] setLocationWithLongitude:@"41.39" andLatitude:@"29.46"];
-    [[EDVisit currentVisit] startWithApiKey:@"458c937d124955befba8011e9030e90c" trackingCode:@"rktqpopy" urlPrefix:@"http://demo2.8digits.com/api/"];
+    [[EDVisit currentVisit] startWithApiKey:@"202cb962ac59075b964b07152d234b70" trackingCode:@"mu16j18l" urlPrefix:@"http://us1-api.8digits.com/api/"];
     
     NSArray *keys = [[NSArray alloc] initWithObjects:@"GSM", nil];
     NSArray *objs = [[NSArray alloc] initWithObjects:@"Turkcell", nil];
@@ -39,7 +39,7 @@
 		We want 8digits to log the activity so we call the startLogging method of our currentVisit. 
 		You might want to delete this line or disable logging anywhere in your application by calling stopLogging when you release the app.
 	 */
-	[[EDVisit currentVisit] startLogging];
+//	[[EDVisit currentVisit] startLogging];
 
 	
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
